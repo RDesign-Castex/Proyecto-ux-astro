@@ -1,0 +1,142 @@
+<div class="container">
+    <div class="camera-bump">
+        <div class="camera cam-one">
+            <div class="cam-shadow"></div>
+        </div>
+        <div class="camera cam-two">
+            <div class="cam-shadow"></div>
+
+        </div>
+        <div class="camera cam-three">
+            <div class="cam-shadow"></div>
+
+        </div>
+        <div class="sensor" ></div>
+        <div class="mini-sensor"></div>
+        <div class="flash"></div>
+        <img src="../../public/img/kisspng-apple-logo-iphone-apple-5ab48f7712b199.0908248715217826470766.png" alt="logo" class="logo">
+    </div>
+    
+</div>
+<style>
+    .container {
+        width: 200px;
+        height: 450px;
+        margin: auto;
+        border: 3px solid rgb(49, 49, 49);
+        margin-top: 50px;
+        border-radius: 35px;
+        background: linear-gradient(to bottom, #b6d4ee 0%, #93a9c1 100%);
+        box-shadow: 0px 2px 3px -1px grey;
+        position: relative;
+    }
+    .container::before {
+        content: "";
+        width: 2px;
+        height: 60px;
+        background-color: #35353a;
+        position: absolute;
+        top: 32%;
+        left: -6px;
+        box-shadow: 0px 0px 4px #93a9c1;
+        border-radius: 20px;
+    }
+    .container::after {
+        content: "";
+        width: 2px;
+        height: 37px;
+        background-color: #35353a;
+        position: absolute;
+        top: 33%;
+        left: -6px;
+        box-shadow: 0px 0px 4px #93a9c1;
+        border-radius: 20px;
+    }
+    .camera-bump {
+        width: 116px;
+        height: 118px;
+        border-radius: 30px;
+        background: linear-gradient(to bottom, #c0dcf4 0%, #8ca2b8 100% );
+        position: relative;
+        top: 10px;
+        box-shadow: 0px 1px 1px 0.5px grey;
+        left: 9px;
+        border: 2px solid #96abbf;
+        text-align: center;
+    }
+    .camera {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: rgb(28, 28, 28);
+        border: 4px solid #aecbea;
+        box-shadow: 0px 6px 3px rgb(105, 103, 103);
+    }
+    .cam-one {
+        position: absolute;
+        top: 4px;
+        left: 8px;
+    }
+    .cam-two {
+        position: absolute;
+        bottom: 6px;
+        left: 8px;
+    }
+    .cam-three {
+        position: absolute;
+        right: 9px;
+        top: 33px;
+    }
+    .cam-shadow {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        border-radius: 100%;
+        top: 8px;
+        right: 8.2px;
+        background: radial-gradient(#3d77a2 30%, #11203a 15%);
+
+    }
+    .sensor {
+        width: 17px;
+        height: 17px;
+        background-color: rgb(28, 28, 28);
+        border-radius: 100px;
+        bottom: 8px;
+        right: 23px;
+        box-shadow: 1px 3px 5px #5a5a5a;
+        position: absolute;
+    }
+    .mini-sensor {
+       width: 3px;
+       height: 4px;
+       background-color: rgb(28, 28, 28);
+       border-radius: 100%;
+       position: absolute;
+       bottom: 21px;
+       right: 9px; 
+    }
+    .flash {
+        width: 17px;
+        height: 17px;
+        background-color: rgb(28, 28, 28);
+        border-radius: 100px;
+        position: absolute;
+        top: 8px;
+        right: 23px;
+        border: 2px solid #cfc4bd;
+        background: radial-gradient(#f5e3d5 30%, #fff2e6 15%);
+        box-shadow: 0px 1px 1px 1px grey;
+    }
+    .logo {
+        width: 40px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción del logo */
+    position: absolute;
+    top: calc(50% - 20px); /* Centra verticalmente el logo */
+    left: calc(50% - 20px); /* Centra horizontalmente el logo */
+    margin-top: 180px;
+    margin-left: 32px; /* Ajusta según la posición deseada en el smartphone */
+    opacity: 0.8; /* Da un efecto ligeramente translúcido al logo */
+    transform: translateY(-50%); 
+    }
+</style>
