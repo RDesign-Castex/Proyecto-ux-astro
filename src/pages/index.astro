@@ -1,14 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
-import Hero from '../components/Hero.astro'
+import Header from '../components/header.astro';
+import Main from '../components/main.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
+	<>
 		<Navbar />
-		<Hero />
-	</main>
+		<Header />
+		<Main />
+		<Footer />
+	</>	
 </Layout>
 
 <style>
